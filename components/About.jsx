@@ -57,16 +57,16 @@ const About = () => {
         )}
         {selectedContent === "Education" && (
           <ul>
-            <li>Master's degree in Network engineering</li>
+            <li>Masters degree in Network engineering</li>
             <li>Bachelor degree in computer science </li>
           </ul>
         )}
         {selectedContent === "Certification" && (
-          <ol>
+          <ul>
             <li>CCNA Introduction to Networks</li>
             <li>CCNA Switching ,Routing and Wireless Essentials</li>
             <li>CCNA Enterprise Networking, Security, and Automation</li>
-          </ol>
+          </ul>
         )}
 
 
