@@ -10,7 +10,7 @@ const About = () => {
     <div className=' flex items-center mt-20 gap-8'>
         <div className='  hidden lg:block lg:w-[350px] lg:h-[350px] lg:ml-12 '>
         <img
-          src='/images/about.gif'
+          src='/images/about.png'
           alt='picture'
        
           objectFit='contain'
