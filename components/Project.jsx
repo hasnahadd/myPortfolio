@@ -53,10 +53,10 @@ const Project = () => {
   return (
     <section className=" ">
       <h2 className="text-center text-4xl font-bold  mt-4 mb-8 md:mb-12">
-        My Projects{" "}
+        My Projects
       </h2>
       <div className="flex gap-4 justify-center flex-wrap ">
-        {" "}
+        
         {projectsData.map((project) => (
           <ProjectCard
             key={project.id}

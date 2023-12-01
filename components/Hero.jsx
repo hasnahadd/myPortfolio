@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-0 mt-4'>
+    <section className='grid grid-cols-1 lg:grid-cols-2 lg:gap-0 mt-4 relative'>
    
       <div className='col-span-1 lg:ml-24 mt-12'>
         <div className='mb-4'>
@@ -34,7 +34,6 @@ const Hero = () => {
         </div>
       </div>
 
-     
       <div className='col-span-1 flex justify-center items-center mr-0 -ml-2 mt-4'>
       <div className='rounded-full bg-[#A19484] w-[230px] h-[230px] lg:w-[230px] lg:h-[230px] relative'>
         <Image
@@ -46,7 +45,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
