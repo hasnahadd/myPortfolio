@@ -133,6 +133,7 @@ const Contact = () => {
              Submit
             </button>
 </form>
+ <Toaster/>
 </div>
 </div>
 
@@ -145,7 +146,7 @@ const Contact = () => {
         />
       </div>
 
-      {Success && <Toaster/>}
+      
 
 </section>
   )
