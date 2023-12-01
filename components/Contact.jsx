@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { Element } from 'react-scroll';
 const Contact = () => {
 
 
@@ -43,6 +44,7 @@ const Contact = () => {
   };
 
   return (
+    <Element name="contact">
     <section
     id="contact"
     className="grid place-items-center md:grid-cols-2 my-12 md:my-4 -mt-10 py-24 gap-4 relative"
@@ -149,6 +151,7 @@ const Contact = () => {
       
 
 </section>
+</Element>
   )
 }
 

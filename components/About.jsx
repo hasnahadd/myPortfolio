@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Element } from 'react-scroll';
 
 const About = () => {
     const [selectedContent, setSelectedContent] = useState("");
@@ -7,8 +8,8 @@ const About = () => {
     setSelectedContent(content);
   };
   return (
-
-    <div className=' flex items-center mt-20 md:mt-0 gap-8'>
+    <Element name="About">
+    <section    className=' flex items-center mt-20 md:mt-0 gap-8'>
         <div className='  hidden lg:block lg:w-[350px] lg:h-[350px] lg:ml-12 '>
         <img
           src='/images/about.png'
@@ -61,7 +62,8 @@ const About = () => {
 
 
       </div>
-    </div>
+    </section>
+    </Element>
   );
 };
 
