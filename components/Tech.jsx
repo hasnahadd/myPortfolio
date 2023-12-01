@@ -3,7 +3,7 @@ import React from 'react';
 const Tech = () => {
   return (
     <>
-    <h2 className="text-center text-4xl font-bold  mt-8 -mb-1 md:mb-10">
+    <h2 className="text-center text-4xl font-bold  mt-8 -mb-1 md:mb-12">
     My Skills{" "}
   </h2>
     <div className="max-w-[1920px] w-full mx-auto overflow-hidden mt-12 h-24">
