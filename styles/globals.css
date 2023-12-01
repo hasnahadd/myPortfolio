@@ -20,3 +20,36 @@ body {
   color: #9F8E80;
   background-color :#F4EDE2;
 }
+@keyframes moveTech {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animate-tech-stack {
+  animation: moveTech 2s infinite;
+}
+/* Define the animation */
+@keyframes scaleText {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.animated-text {
+  animation-name: scaleText;
+  animation-duration: 2s; 
+  animation-iteration-count: infinite; 
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+
 const About = () => {
     const [selectedContent, setSelectedContent] = useState("");
   const showContent = (content) => {
@@ -19,7 +20,7 @@ const About = () => {
         />
       </div>
       <div>
-        <h2 className=' lg:text-3xl font-bold'>About me</h2>
+        <h2 className=' lg:text-4xl font-bold'>About me</h2>
         <div className='lg:w-[600px] lg:h-[300px] text-black'>
           <p className='text-base text-justify'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error labore reiciendis non,
@@ -28,12 +29,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-row text-black mt-2">
-          <button
-            className="mr-4 font-semibold cursor-pointer  text-black  hover:text-[#A19484] border-b border-[#A19484] "
-            onClick={() => showContent("Skills")}
-          >
-            Skills
-          </button>
+        
           <button
             className="mr-4 font-semibold cursor-pointer  text-black  hover:text-[#A19484] border-b border-[#A19484] "
             onClick={() => showContent("Education")}
@@ -47,14 +43,7 @@ const About = () => {
             Certification
           </button>
         </div>
-        {selectedContent === "Skills" && (
-          <ul>
-            <li> Nextjs</li>
-            <li>Javascript</li>
-            <li>Tailwind</li>
-            <li>Firebase</li>
-          </ul>
-        )}
+       
         {selectedContent === "Education" && (
           <ul>
             <li>Masters degree in Network engineering</li>

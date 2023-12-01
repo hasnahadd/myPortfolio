@@ -4,6 +4,7 @@ import Hero from '@/components/Hero'
 import NavBar from '@/components/NavBar'
 import About from '@/components/About'
 import Project from '@/components/Project'
+import Tech from '@/components/Tech'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function Home() {
            <NavBar/>
             <Hero/>
            <About/>
+           <Tech/>
            <Project/>
     </main>
   )

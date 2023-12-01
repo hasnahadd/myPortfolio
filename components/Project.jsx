@@ -7,7 +7,7 @@ const Project = () => {
       id: 1,
       title: "Souq DZ",
       description:
-        "Sales-focused e-commerce platform with search, product discovery, cart management, filter options (price, ratings, product type), and total price ",
+        "Sales-focused e-commerce platform with search, product discovery, cart management, filter options (price, ratings, product type),and total price display ",
       image: "/images/souqdz.png",
       tag: ["All", "Web"],
       gitUrl: "/",

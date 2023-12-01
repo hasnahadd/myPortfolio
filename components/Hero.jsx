@@ -8,7 +8,8 @@ const Hero = () => {
    
       <div className='col-span-1 lg:ml-24 mt-12'>
         <div className='mb-4'>
-          <h1 className='text-4xl font-extrabold lg:text-6xl'>Hello, Im Manel</h1>
+        <h1 class='text-4xl font-extrabold lg:text-6xl animated-text'>Hello, Im Manel</h1>
+
           <p className='text-[#ADB7BE] lg:text-xl'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.!
           </p>
