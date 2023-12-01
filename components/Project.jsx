@@ -12,7 +12,7 @@ const Project = () => {
       tag: ["All", "Web"],
       gitUrl: "/",
       previewUrl: "/",
-      tag: "API Firebase Tailwind",
+      tag: "API Firebase Tailwind Nextjs",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const Project = () => {
       tag: ["All", "Web"],
       gitUrl: "https://github.com/hasnahadd/Pebble-work",
       previewUrl: "https://pebble-work.vercel.app/",
-      tag: "API Firebase Tailwind",
+      tag: "API Firebase Tailwind Nextjs",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const Project = () => {
       tag: ["All", "Networking"],
       gitUrl: "https://github.com/hasnahadd/movie-project-devsquad",
       previewUrl: "https://movie-project-devsquad.vercel.app/",
-      tag: "API Firebase Tailwind",
+      tag: "API Firebase Tailwind Nextjs",
     },
 
     {

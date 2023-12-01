@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <section
     id="contact"
-    className="grid place-items-center md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+    className="grid place-items-center md:grid-cols-2 my-12 md:my-4 -mt-10 py-24 gap-4 relative"
   >
   
 
@@ -61,10 +61,10 @@ const Contact = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/hasnahadd">
           <FaLinkedin size={30}/>
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/manel-haddoud-aa5095278/">
             <FaGithub size={30}/> 
           </Link>
         </div>
