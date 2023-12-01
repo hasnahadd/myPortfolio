@@ -2,12 +2,54 @@ import React from 'react'
 import Link from 'next/link'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 const Contact = () => {
+
+
+    const [allData, setAllData] = useState({ email: '', subject: '', message: '' });
+
+  const [Success, setSuccess] = useState(false);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setAllData((prevData) => ({ ...prevData, [name]: value }));
+  };
+ console.log(allData)
+ 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('https://formspree.io/f/xeqbbnkr', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(allData),
+      });
+
+      if (response.ok) {
+       
+        setSuccess(true);
+        toast.success('Form submmited')
+      } else {
+      
+        console.error('Failed to send email');
+       
+      }
+    } catch (error) {
+      console.error('Error submitting form', error);
+      toast.error(error)
+    } 
+  };
+
   return (
     <section
     id="contact"
     className="grid place-items-center md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
   >
+  
+
+    
 <div>
        <h5 className="text-2xl font-bold  my-2">
           Let&apos;s Connect
@@ -27,7 +69,9 @@ const Contact = () => {
           </Link>
         </div>
 <div className='mt-8'>
-<from className="flex flex-col">
+
+
+<form className="flex flex-col" onSubmit={handleSubmit}>
 
 <div className="mb-6">
               <label
@@ -39,10 +83,12 @@ const Contact = () => {
               <input
                 name="email"
                 type="email"
+                value={allData.email}
                 id="email"
                 required
-                className=" border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className=" border border-[#33353F] placeholder-[#9CA2A9] text-black  text-sm rounded-lg block w-full p-2.5"
                 placeholder="email@google.com"
+                onChange={handleChange}
               />
             </div>
             <div className="mb-6">
@@ -57,8 +103,10 @@ const Contact = () => {
                 type="text"
                 id="subject"
                 required
-                className=" border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className=" border border-[#33353F] placeholder-[#9CA2A9]  text-black  text-sm rounded-lg block w-full p-2.5"
                 placeholder="Just saying hi"
+                value={allData.subject}
+                onChange={handleChange}
               />
             </div>
             <div className="mb-6">
@@ -71,13 +119,24 @@ const Contact = () => {
               <textarea
                 name="message"
                 id="message"
-                className=" border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className=" border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
                 placeholder="Let's talk about..."
+                value={allData.message}
+                onChange={handleChange}
               />
                 </div>
-</from>
+                <button
+              type="submit"
+           
+              className="bg-[#9F8E80] text-white font-serif  px-4 py-2 rounded-md hover:bg-[#dacbb1] transition-colors duration-300 w-full"
+            >
+             Submit
+            </button>
+</form>
 </div>
 </div>
+
+
 <div className="md:text-right">
         <img
           src="images/email.png" 
@@ -86,7 +145,7 @@ const Contact = () => {
         />
       </div>
 
-
+      {Success && <Toaster/>}
 
 </section>
   )
