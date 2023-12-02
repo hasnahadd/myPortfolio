@@ -30,7 +30,7 @@ const About = () => {
            With a strong background in computer science and network engineering .
           </p>
         </div>
-        <div className="flex flex-row text-black lg:-mt-40">
+        <div className="flex flex-row text-black lg:-mt-40 mb-1">
         
           <button
             className="mr-4 font-semibold cursor-pointer  text-black  hover:text-[#A19484] border-b border-[#A19484] "
@@ -48,7 +48,7 @@ const About = () => {
        
         {selectedContent === "Education" && (
           <ul>
-            <li>Masters degree in Network engineering</li>
+            <li>Master&apos;s degree in Network engineering</li>
             <li>Bachelor degree in computer science </li>
           </ul>
         )}

@@ -31,7 +31,7 @@ const Contact = () => {
       if (response.ok) {
        
         setSuccess(true);
-        toast.success('Form submmited')
+        toast.success('Failed to send')
       } else {
       
         console.error('Failed to send email');
