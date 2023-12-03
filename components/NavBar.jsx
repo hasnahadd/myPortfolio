@@ -4,7 +4,7 @@ import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 1011); 
@@ -17,7 +17,7 @@ const NavBar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const [isOpen, setIsOpen] = useState(false);
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -29,8 +29,8 @@ const NavBar = () => {
   return (
     <nav className="flex justify-between items-center px-4 py-2 bg-[#9F8E80] opacity-60 rounded-full text-white cursor-pointer text-xl">
       <div>
-     
-        <img className="h-10" src="./images/logo.png" alt="logo" />
+    
+        <img className="h-[60px] " src="./images/logo.png" alt="logo" />
       </div>
       {isMobile ? (
         <div className="flex items-center">

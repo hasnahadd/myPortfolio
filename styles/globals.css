@@ -19,6 +19,8 @@
 body {
   color: #9F8E80;
   background-color :#F4EDE2;
+  scroll-behavior: smooth
+
 }
 @keyframes moveTech {
   0% {

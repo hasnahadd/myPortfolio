@@ -64,11 +64,11 @@ const Contact = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/hasnahadd">
-          <FaLinkedin size={30}/>
+          < FaGithub size={30}/>
           </Link>
           <Link href="https://www.linkedin.com/in/manel-haddoud-aa5095278/">
-            <FaGithub size={30}/> 
-          </Link>
+            < FaLinkedin size={30}/> 
+          </Link> 
         </div>
 <div className='mt-8'>
 
