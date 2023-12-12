@@ -34,7 +34,7 @@ const Contact = () => {
         toast.success('the message sent successfully')
       } else {
       
-        console.error('Failed to send email');
+        console.error('Failed to send the message');
        
       }
     } catch (error) {
