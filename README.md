@@ -1,8 +1,8 @@
-# [Manel]'s Portfolio
+# Manel's Portfolio
 
 ## Overview
 
-Welcome to my portfolio repository! This portfolio serves as a showcase of my skills, projects, and accomplishments as a [Frontend ]. It's designed to provide an overview of my capabilities, experiences, and interests to potential employers, collaborators, and anyone interested in learning more about my work.
+Welcome to my portfolio repository! This portfolio serves as a showcase of my skills, projects, and accomplishments as a Frontend . It's designed to provide an overview of my capabilities, experiences, and interests to potential employers, collaborators, and anyone interested in learning more about my work.
 
 ## Purpose
 
@@ -27,9 +27,9 @@ I welcome feedback and suggestions for improving my portfolio. If you have any c
 
 Feel free to contact me via the following channels:
 
-- Email: [manelhasnahaddoud@gmail.com]
-- LinkedIn: [https://www.linkedin.com/in/manelhasna-haddoud/]
-- Website: [Link to your personal website, if applicable]
+- Email: manelhasnahaddoud@gmail.com
+- LinkedIn: https://www.linkedin.com/in/manelhasna-haddoud/
+- Website: 
 
 Thank you for visiting my portfolio! I hope you find it informative and engaging.
 
