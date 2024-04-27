@@ -15,7 +15,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setAllData((prevData) => ({ ...prevData, [name]: value }));
   };
- console.log(allData)
+//  console.log(allData)
  
   const handleSubmit = async (e) => {
     e.preventDefault();
