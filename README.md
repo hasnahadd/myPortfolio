@@ -29,7 +29,7 @@ Feel free to contact me via the following channels:
 
 - Email: manelhasnahaddoud@gmail.com
 - LinkedIn: https://www.linkedin.com/in/manelhasna-haddoud/
-- Website: 
+- Website: manel-hasnahaddoud.vercel.app
 
 Thank you for visiting my portfolio! I hope you find it informative and engaging.
 
