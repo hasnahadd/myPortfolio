@@ -21,7 +21,7 @@ const Hero = () => {
              Hire Me
           </ScrollLink>
           <Link
-            href="/cv/ManelHasnaHaddoud.pdf"  download="my_cv.pdf"
+            href="/cv/HaddoudManelHasnaResumee.pdf"  download="my_cv.pdf"
             className="inline-block py-1 px-1 rounded-full   hover:bg-slate-800 text-white"
           >
             <span className="block bg-[#A19484] hover:bg-[#A19484] rounded-full px-5 py-2">
