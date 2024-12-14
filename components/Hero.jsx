@@ -34,7 +34,7 @@ const Hero = () => {
       <div className='col-span-1 flex justify-center items-center mr-0 -ml-2 mt-4'>
       <div className='rounded-full bg-[#A19484] w-[230px] h-[230px] lg:w-[230px] lg:h-[230px] relative'>
         <Image
-{/*  src='/images/img.png'*/}
+src='/images/about.png'
             alt='img' 
             className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
               width={200}
